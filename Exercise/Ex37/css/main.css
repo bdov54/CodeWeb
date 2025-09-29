@@ -8,6 +8,8 @@
     float:left;
     top: 60px;
     text-indent:0px;
+    width: 100%;
+    align-self:center;
 }
 #container ul{
     float:left;
