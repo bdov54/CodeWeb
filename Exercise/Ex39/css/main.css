@@ -10,10 +10,10 @@ table {
       text-align: left;
     }
     th {
-      background-color: #9ccc3c; /* xanh lá đậm header */
+      background-color: #9ccc3c; 
       color: white;
       font-weight: bold;
     }
-    tr:nth-child(even) {
-      background-color: #f9f9f9; /* nền kẻ sọc */
+    tr:nth-child(odd) {
+      background-color: hsl(112, 69%, 94%); 
     }
