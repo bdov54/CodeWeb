@@ -14,7 +14,7 @@ p {
     list-style-type: upper-roman;
  }
  ol ol{
-    list-style-type: decimal;
+    list-style-type: upper-roman;
  }
  ol ol ul{
     list-style-type: circle;

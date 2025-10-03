@@ -1,0 +1,17 @@
+body{
+    background-color: orange;
+}
+.topText{
+    background-color: yellow;
+    text-align: center;
+}
+.topImg{
+    text-align: center;
+}
+.green{
+    background-color: aquamarine;
+}
+h3, h4{
+    color:blueviolet;
+    text-decoration: solid;
+}
