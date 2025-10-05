@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color - Nguyen Le Bao Doanh</title>
+    <script>
+        function change_color(value){
+            mydiv=document.getElementById("mydiv")
+            mydiv.setAttribute("style","width: 100%; height: 100px; background-color:" +value)
+        }
+    </script>
+</head>
+<body>
+    <h3>Change Background Color:</h3>
+    <select id="mybackground" name="mybackground" onchange="change_color(this.value)">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value=""></option>
+    </select>
+    <div style="width: 100%; height: 100px; background-color: pink;" id="mydiv" name="mydiv">
+
+    </div>
+</body>
+</html>

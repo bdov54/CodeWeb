@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex50 - Nguyễn Lê Bảo Doanh</title>
+    <style type="text/css">
+        body{
+            background-color: #41d1d1;
+        }
+        caption{
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/DeLong.jpg"/>
+    </div>
+    <form id="myForm">
+        <table>
+            <caption>Travel Expense Report<hr></caption>
+            <tr>
+                <td>1) First Name:</td>
+                <td>
+                    <input type="text" name="fname" id="fname">
+                </td>
+                <td>Last Name:</td>
+                <td>
+                    <input type="text" name="lname" id="lname">
+                </td>
+            </tr>
+            <tr>
+                <td>2) Social Security Number:</td>
+                <td>
+                    <input type="text" name="fname" id="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>3) Department:</td>
+                <td>
+                    <select id="Department" name="Department">
+                        <option value="Accounting">Accounting</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Human Resource">Human Resource</option>
+                        <option value="Sales">Sales</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4) Describe the purpose of your trip</td>
+            </tr>
+            <tr rowspan="3">
+                 <td colspan="3"><input type="text" name="purpose" id="purpose"></td>
+            </tr>
+            <tr>
+                <td>5) Itemize your travel expense</td>
+            </tr>
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th colspan="3">Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="date">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" value="">
+                    </td>
+                    <td>
+                        <select>
+                            <option value="Meal"></option>
+                            <option value="Chicken"></option>
+                            <option value="Beef"></option>
+                            <option value="Fish"></option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="date">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" value="">
+                    </td>
+                    <td>
+                        <select>
+                            <option value="Meal"></option>
+                            <option value="Chicken"></option>
+                            <option value="Beef"></option>
+                            <option value="Fish"></option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="date">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" value="">
+                    </td>
+                    <td>
+                        <select>
+                            <option value="Meal"></option>
+                            <option value="Chicken"></option>
+                            <option value="Beef"></option>
+                            <option value="Fish"></option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input  type="date">
+                    </td>
+                    <td colspan="3">
+                        <input type="text" value="">
+                    </td>
+                    <td>
+                        <select>
+                            <option value="Meal"></option>
+                            <option value="Chicken"></option>
+                            <option value="Beef"></option>
+                            <option value="Fish"></option>
+                        </select>
+                        <td>
+                        <input type="text" value="">
+                    </td>
+                    </td>
+                </tr>
+            </table>
+        </table>
+    </form>
+</body>
+</html>

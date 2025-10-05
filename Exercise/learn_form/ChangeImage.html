@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image - Doanh</title>
+    <script>
+        function hide_image(){
+            avt=document.getElementById("avatar");
+            avt.style="display: none";
+        }
+         function show_image(){
+            avt=document.getElementById("avatar");
+            avt.style="display: block";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="radio" name="myimage" id="img1" onchange="show_image()"/>
+        <label for="img1">Show Image</label>
+        <br/>
+        <input type="radio" name="myimage" id="img2" onchange="hide_image()"/>
+        <label for="img1">Hide Image</label>
+        <img src="../learn_form/images/Bester2.jpg" name="avatar" id="avatar" style="display: block"/>
+    </form>
+</body>
+</html>

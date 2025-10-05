@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex49 - Nguyễn Lê Bảo Doanh</title>
+    <style type="text/css">
+        body {
+            background-color: #66a3df;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            color: rgb(188, 49, 49);
+            text-align: left;
+        }
+        .header_section{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <table>
+            <caption>Online Classifieds Search Form<hr></caption>
+            
+
+            <tr>
+                <td colspan="4" class="header_section">1) Search for a classified in the following sections:</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="section" value="Employment"> Employment
+                </td>
+                <td>
+                    <input type="radio" name="section" value="Personal"> Personal
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="section" value="ForSale"> For Sale
+                </td>
+                <td>
+                    <input type="radio" name="section" value="Miscellaneous"> Miscellaneous
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="section" value="Housing"> Housing
+                </td>
+                <td>
+                    <input type="radio" name="section" value="All"> All of the above
+                </td>
+            </tr>
+
+  
+            <tr>
+                <td colspan="4" class="header_section">2) Search the following publications:</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="publication" value="Midwest"> Midwest Times</td>
+                <td><input type="checkbox" name="publication" value="Modern"> Modern News</td>
+                <td><input type="checkbox" name="publication" value="EmploymentToday"> Employment Today</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="publication" value="GreatLakes"> Great Lakes Classifieds</td>
+                <td><input type="checkbox" name="publication" value="Middleton"> Middleton Daily</td>
+                <td><input type="checkbox" name="publication" value="Cashtown"> Cashtown Daily News</td>
+            </tr>
+
+  
+            <tr>
+                <td class="header_section">3) From</td>
+                <td><input type="text" placeholder="mm/dd/yy"></td>
+                <td>to</td>
+                <td><input type="text" placeholder="mm/dd/yy"></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="4" class="header_section">4) Enter a few keywords to describe the classified.</td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="text" style="width: 100%;"></td>
+            </tr>
+
+            <!-- Section 5 -->
+            <tr>
+                <td colspan="4" class="header_section">5) Click one of the options below:</td>
+            </tr>
+            <tr>
+                <td><a href="#"><img src="../images/Search.gif" alt="Search"></a></td>
+                <td><a href="https://tranduythanh.com/webmaterials/2025_Practice-Business-Web-Development.pdf"><img src="../images/Help.gif" alt="Help"></a></td>
+                <td>
+                    <a href="#" onclick="document.getElementById('myForm').reset(); return false;">
+                        <img src="../images/Cancel.gif" alt="Cancel">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
