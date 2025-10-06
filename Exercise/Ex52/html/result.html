@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result Page</title>
+</head>
+<body>
+  <h2>Submitted Data (GET method)</h2>
+  <p>Full name: <span id="fullname"></span></p>
+  <p>Email: <span id="email"></span></p>
+  <p>Send to: <span id="sendto"></span></p>
+  <p>Title: <span id="title"></span></p>
+  <p>Content: <span id="content"></span></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("fullname").textContent = params.get("fullname");
+    document.getElementById("email").textContent = params.get("email");
+    document.getElementById("sendto").textContent = params.get("sendto");
+    document.getElementById("title").textContent = params.get("title");
+    document.getElementById("content").textContent = params.get("content");
+  </script>
+</body>
+</html>

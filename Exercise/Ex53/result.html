@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Result</title>
+</head>
+<body>
+  <h2>Order Summary</h2>
+  <p>Qty Mouse: <span id="q1"></span>, Item total: <span id="i1"></span></p>
+  <p>Qty Keyboard: <span id="q2"></span>, Item total: <span id="i2"></span></p>
+  <p>Qty USB: <span id="q3"></span>, Item total: <span id="i3"></span></p>
+  <h3>Total: <span id="sum"></span></h3>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("q1").textContent = params.get("qty1");
+    document.getElementById("i1").textContent = params.get("item1");
+    document.getElementById("q2").textContent = params.get("qty2");
+    document.getElementById("i2").textContent = params.get("item2");
+    document.getElementById("q3").textContent = params.get("qty3");
+    document.getElementById("i3").textContent = params.get("item3");
+    document.getElementById("sum").textContent = params.get("total");
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 53 - Product GET</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 500px;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    .total-row td {
+      border: none;
+      text-align: right;
+    }
+    .btn {
+      background-color: orange;
+      border: none;
+      padding: 6px 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form action="result.html" method="get">
+    <table>
+      <tr>
+        <th>Part Number</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Item total</th>
+      </tr>
+      <tr>
+        <td>C112</td>
+        <td>Mouse</td>
+        <td>19.95$</td>
+        <td><input type="number" name="qty1" min="0"></td>
+        <td><input type="text" name="item1"></td>
+      </tr>
+      <tr>
+        <td>B124</td>
+        <td>Keyboard US</td>
+        <td>29.95$</td>
+        <td><input type="number" name="qty2" min="0"></td>
+        <td><input type="text" name="item2"></td>
+      </tr>
+      <tr>
+        <td>U125</td>
+        <td>USB KingMax</td>
+        <td>39.95$</td>
+        <td><input type="number" name="qty3" min="0"></td>
+        <td><input type="text" name="item3"></td>
+      </tr>
+      <tr class="total-row">
+        <td colspan="4">Total:</td>
+        <td><input type="text" name="total"></td>
+      </tr>
+      <tr class="total-row">
+        <td colspan="5" style="text-align:right;">
+          <button type="submit" class="btn">Sum</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

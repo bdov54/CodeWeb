@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex51 - Nguyen Le Bao Doanh</title>
+    <style>
+        body{
+            background-color: rgb(21, 140, 140);
+        }
+        caption{
+            font-size: 20pt;
+            text-align: center;
+            color: white;
+            text-decoration: solid;
+        }
+         #check_scroll{
+            width: 180px;       
+            height: 60px;       
+            overflow-y: scroll; 
+            border: 1px solid #ccc; 
+            padding: 2px;
+         }
+        .myImg{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div clss="myImg">
+        <img src="../images/Logo.gif"/>
+    </div>
+    <form id="myForm">
+        <table>
+            <caption>Newborn Registration</caption>
+            <tr>
+                <td>Date:</td>
+                <td>
+                    <input type="date" name="date" id="date"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>1) Infant's first name:</td>
+                <td>
+                    <input type="text" name="fname" id="fname"></input>
+                </td>
+                <td>Last</td>
+                <td>
+                    <input type="text" name="lname" id="lname"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>2) Medical Record #:</td>
+                <td>
+                    <input type="text" name="record" id="record"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>3) Date of birth:</td>
+                <td>
+                    <input type="date" name="bdate" id="bdate"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>4) Birth Weight:</td>
+                <td>
+                    <input type="number" name="weight" id="weight"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>5) APGAR score:</td>
+                <td>
+                    <input type="number" name="score" id="score"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>6) Mother's first name:</td>
+                <td>
+                    <input type="text" name="mfname" id="mfname"></input>
+                </td>
+                <td>Last：</td>
+                <td>
+                    <input type="text" name="mlname" id="mlname"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>7) Father's first name:</td>
+                <td>
+                    <input type="text" name="ffname" id="ffname"></input>
+                </td>
+                <td>Last：</td>
+                <td>
+                    <input type="text" name="flname" id="flname"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>8) Physician (check all the apply)</td>
+                <td>
+                    <div id="check_scroll">
+                        <input type="checkbox" name="albert" id="albert"> Dr. Warren Albert<br>
+                        <input type="checkbox" name="alvearez" id="alvearez"> Dr. Maria Alvarez<br>
+                        <input type="checkbox" name="karen" id="karen"> Dr. Karen Brinkman<br>
+                        <input type="checkbox" name="kerry" id="kerry"> Dr. Micheal Kerry<br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
