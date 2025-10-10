@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex54 - Nguyễn Lê Bảo Doanh</title>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <form id="myForm">
+        <fieldset>
+            <table border="1">
+                <tr>
+                    <td>a:</td>
+                    <td>
+                        <input type="number" name="a" id="a">
+                    </td>
+                </tr>
+                <tr>
+                    <td>b:</td>
+                    <td>
+                        <input type="number" name="b" id="b">
+                    </td>
+                </tr>
+                <tr>
+                    <td>c:</td>
+                    <td>
+                        <input type="number" name="c" id="c">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result:</td>
+                    <td id="Result"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" onclick="call_MAX(a.value, b.value, c.value, Result)">MAX</button>
+                        <button type="button" onclick="call_MIN(a.value, b.value, c.value, Result)">MIN</button>
+                        <button type="button" onclick="call_sin(a.value, Result)">sin(a)</button>
+                        <button type="button" onclick="call_cos(a.value, Result)">cos(a)</button>
+                        <button type="button" onclick="call_exp(a.value,b.value, Result)">a^b</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

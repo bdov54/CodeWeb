@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year - Doanh</title>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript">
+        function process_leap_year(){
+            if (!isNaN(myForm.year.value)){
+                result=document.getElementById('result')
+                r=is_leap_year(myForm.year.value)
+                result.innerText=(r==true?"Is Leap Year":"Not Leap Year")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        <fieldset>
+            <legend>Leap Year Checking</legend>
+            <table>
+                <tr>
+                    <td>Enter year</td>
+                    <td>
+                        <input type="number" name="year" id="year" oninput="process_leap_year()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td id="result"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
