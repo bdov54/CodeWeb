@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ex56 - Nguyen Le Bao Doanh</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  table {
+    border: 1px solid #333;
+    padding: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+  }
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+  td {
+    vertical-align: top;
+    text-align: center;
+  }
+  button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+  }
+</style>
+<script>
+  function getInput() {
+    return document.getElementById("inputText").value;
+  }
+
+  function setOutput(value) {
+    document.getElementById("outputText").value = value;
+  }
+
+  function countUppercase() {
+    let text = getInput();
+    let count = (text.match(/[A-Z]/g) || []).length;
+    setOutput("Uppercase letters: " + count);
+  }
+
+  function countLowercase() {
+    let text = getInput();
+    let count = (text.match(/[a-z]/g) || []).length;
+    setOutput("Lowercase letters: " + count);
+  }
+
+  function toUppercase() {
+    setOutput(getInput().toUpperCase());
+  }
+
+  function toLowercase() {
+    setOutput(getInput().toLowerCase());
+  }
+
+  function oneWordPerLine() {
+    let text = getInput().trim().split(/\s+/).join("\n");
+    setOutput(text);
+  }
+
+  function wordCount() {
+    let text = getInput().trim();
+    if (text === "") {
+      setOutput("Word count: 0");
+      return;
+    }
+    let count = text.split(/\s+/).length;
+    setOutput("Word count: " + count);
+  }
+
+  function printVowelsConsonants() {
+    let text = getInput().toLowerCase();
+    let vowels = text.match(/[aeiou]/g) || [];
+    let consonants = text.match(/[bcdfghjklmnpqrstvwxyz]/g) || [];
+    setOutput("Vowels: " + vowels.join(", ") + "\nConsonants: " + consonants.join(", "));
+  }
+
+  function openW3C() {
+    window.open("https://www.w3.org/", "_blank");
+  }
+</script>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th colspan="2"><h2>Using String Processing functions</h2></th>
+  </tr>
+  <tr>
+    <td><b>Input Data:</b><br><textarea id="inputText"></textarea></td>
+    <td><b>Result:</b><br><textarea id="outputText" readonly></textarea></td>
+  </tr>
+  <tr>
+    <td><button onclick="countUppercase()">Count the number of uppercase characters</button></td>
+    <td><button onclick="countLowercase()">Count the number of lowercase characters</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="toUppercase()">Uppercase display</button></td>
+    <td><button onclick="oneWordPerLine()">Output one word per line</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="toLowercase()">Lowercase display</button></td>
+    <td><button onclick="wordCount()">Word count</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="countLowercase()">Count the number of lowercase characters</button></td>
+    <td><button onclick="printVowelsConsonants()">Print vowels, consonants</button></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button onclick="openW3C()">W3C's String Processing Website</button></td>
+  </tr>
+</table>
+
+</body>
+</html>
