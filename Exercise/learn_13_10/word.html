@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Xử lý chuỗi với indexOf và lastIndexOf</title>
+  <script>
+    function process_string() {
+      let str = document.getElementById("input_string").value.trim();
+      let p1 = str.indexOf(" ");
+      let p2 = str.lastIndexOf(" ");
+
+      if (p1 === -1) {
+        document.getElementById("name_output").innerText = 
+          str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+        return;
+      }
+      let namePart = str.substring(p1 + 1, str.length);
+
+      namePart = namePart
+        .toLowerCase()
+        .split(/\s+/)
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      // Xuất ra name_output
+      document.getElementById("name_output").innerText = namePart;
+    }
+  </script>
+</head>
+<body>
+  <form id="myForm">
+    <table border="1" cellpadding="5">
+      <tr>
+        <td>Input:</td>
+        <td>
+          <input type="text" id="input_string" oninput="process_string()" 
+                 placeholder="Ví dụ: 123 Nguyen van a" />
+        </td>
+      </tr>
+      <tr>
+        <td>Output:</td>
+        <td id="name_output"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
